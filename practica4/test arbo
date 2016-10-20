@@ -1,0 +1,354 @@
+Buildfile: /home/erick/Dropbox/EDD/practica4/build.xml
+
+compile.practica4:
+
+practica4.jar:
+
+test:
+    [junit] Running mx.unam.ciencias.edd.test.TestArbolBinario
+    [junit] Testsuite: mx.unam.ciencias.edd.test.TestArbolBinario
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.059 sec
+    [junit] Tests run: 1, Failures: 0, Errors: 0, Skipped: 1, Time elapsed: 0.059 sec
+    [junit] 
+    [junit] Testcase: mx.unam.ciencias.edd.test.TestArbolBinario took 0 sec
+    [junit] 	SKIPPED
+    [junit] Running mx.unam.ciencias.edd.test.TestArbolBinarioCompleto
+    [junit] Testsuite: mx.unam.ciencias.edd.test.TestArbolBinarioCompleto
+    [junit] Tests run: 26, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 0.544 sec
+    [junit] Tests run: 26, Failures: 1, Errors: 3, Skipped: 0, Time elapsed: 0.544 sec
+    [junit] 
+    [junit] Testcase: testConstructor took 0.017 sec
+    [junit] Testcase: testGetElementos took 0.009 sec
+    [junit] Testcase: testGetUltimoVerticeAgregado took 0.001 sec
+    [junit] Testcase: testContiene took 0.004 sec
+    [junit] Testcase: testBusca took 0.013 sec
+    [junit] Testcase: testRaiz took 0.002 sec
+    [junit] Testcase: testEsVacio took 0.004 sec
+    [junit] Testcase: testEquals took 0.002 sec
+    [junit] Testcase: testToString took 0.033 sec
+    [junit] Testcase: testIterator took 0.017 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioCompleto.testIterator(TestArbolBinarioCompleto.java:288)
+    [junit] 
+    [junit] Testcase: testVerticeToString took 0.001 sec
+    [junit] Testcase: testVerticeHayPadre took 0 sec
+    [junit] Testcase: testVerticeHayIzquierdo took 0 sec
+    [junit] Testcase: testVerticeHayDerecho took 0.001 sec
+    [junit] Testcase: testVerticeGetPadre took 0.001 sec
+    [junit] Testcase: testVerticeGetIzquierdo took 0.005 sec
+    [junit] Testcase: testVerticeGetDerecho took 0.001 sec
+    [junit] Testcase: testVerticeGet took 0 sec
+    [junit] Testcase: testVerticeEquals took 0.001 sec
+    [junit] Testcase: testIteradorHasNext took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] es vacia
+    [junit] java.util.NoSuchElementException: es vacia
+    [junit] 	at mx.unam.ciencias.edd.MeteSaca.saca(MeteSaca.java:47)
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinarioCompleto$Iterador.next(ArbolBinarioCompleto.java:36)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioCompleto.testIteradorHasNext(TestArbolBinarioCompleto.java:453)
+    [junit] 
+    [junit] Testcase: testIteradorNext took 0 sec
+    [junit] 	Caused an ERROR
+    [junit] es vacia
+    [junit] java.util.NoSuchElementException: es vacia
+    [junit] 	at mx.unam.ciencias.edd.MeteSaca.saca(MeteSaca.java:47)
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinarioCompleto$Iterador.next(ArbolBinarioCompleto.java:36)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioCompleto.testIteradorNext(TestArbolBinarioCompleto.java:473)
+    [junit] 
+    [junit] Testcase: testIteradorRemove took 0.001 sec
+    [junit] Testcase: testConstructorColeccion took 0.014 sec
+    [junit] Testcase: testAgrega took 0.006 sec
+    [junit] Testcase: testElimina took 0.002 sec
+    [junit] 	Caused an ERROR
+    [junit] Elemento nulo.
+    [junit] java.lang.IllegalArgumentException: Elemento nulo.
+    [junit] 	at mx.unam.ciencias.edd.Cola.mete(Cola.java:15)
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinarioCompleto.elimina(ArbolBinarioCompleto.java:120)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioCompleto.testElimina(TestArbolBinarioCompleto.java:119)
+    [junit] 
+    [junit] Testcase: testProfundidad took 0.001 sec
+    [junit] Running mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado
+    [junit] Testsuite: mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado
+    [junit] Tests run: 28, Failures: 10, Errors: 14, Skipped: 0, Time elapsed: 0.693 sec
+    [junit] Tests run: 28, Failures: 10, Errors: 14, Skipped: 0, Time elapsed: 0.693 sec
+    [junit] 
+    [junit] Testcase: testConstructor took 0.018 sec
+    [junit] Testcase: testAgrega took 0.014 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.lang.NullPointerException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinarioOrdenado.agrega(ArbolBinarioOrdenado.java:94)
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinarioOrdenado.agrega(ArbolBinarioOrdenado.java:89)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testAgrega(TestArbolBinarioOrdenado.java:96)
+    [junit] 
+    [junit] Testcase: testElimina took 0.002 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testElimina(TestArbolBinarioOrdenado.java:146)
+    [junit] 
+    [junit] Testcase: testProfundidad took 0.003 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinario.arbolBinarioValido(TestArbolBinario.java:46)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.arbolBinarioOrdenadoValido(TestArbolBinarioOrdenado.java:46)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testProfundidad(TestArbolBinarioOrdenado.java:163)
+    [junit] 
+    [junit] Testcase: testGetElementos took 0 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinario.arbolBinarioValido(TestArbolBinario.java:46)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.arbolBinarioOrdenadoValido(TestArbolBinarioOrdenado.java:46)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testGetElementos(TestArbolBinarioOrdenado.java:183)
+    [junit] 
+    [junit] Testcase: testGetUltimoVerticeAgregado took 0.001 sec
+    [junit] Testcase: testContiene took 0.002 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testContiene(TestArbolBinarioOrdenado.java:208)
+    [junit] 
+    [junit] Testcase: testBusca took 0.001 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testBusca(TestArbolBinarioOrdenado.java:220)
+    [junit] 
+    [junit] Testcase: testRaiz took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testRaiz(TestArbolBinarioOrdenado.java:239)
+    [junit] 
+    [junit] Testcase: testEsVacio took 0.001 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testEsVacio(TestArbolBinarioOrdenado.java:249)
+    [junit] 
+    [junit] Testcase: testEquals took 0.003 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testEquals(TestArbolBinarioOrdenado.java:279)
+    [junit] 
+    [junit] Testcase: testToString took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinario.arbolBinarioValido(TestArbolBinario.java:46)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.arbolBinarioOrdenadoValido(TestArbolBinarioOrdenado.java:46)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testToString(TestArbolBinarioOrdenado.java:291)
+    [junit] 
+    [junit] Testcase: testIterator took 0.022 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testIterator(TestArbolBinarioOrdenado.java:323)
+    [junit] 
+    [junit] Testcase: testVerticeToString took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testVerticeToString(TestArbolBinarioOrdenado.java:332)
+    [junit] 
+    [junit] Testcase: testVerticeHayPadre took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testVerticeHayPadre(TestArbolBinarioOrdenado.java:342)
+    [junit] 
+    [junit] Testcase: testVerticeHayIzquierdo took 0.004 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testVerticeHayIzquierdo(TestArbolBinarioOrdenado.java:357)
+    [junit] 
+    [junit] Testcase: testVerticeHayDerecho took 0 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testVerticeHayDerecho(TestArbolBinarioOrdenado.java:371)
+    [junit] 
+    [junit] Testcase: testVerticeGetPadre took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testVerticeGetPadre(TestArbolBinarioOrdenado.java:385)
+    [junit] 
+    [junit] Testcase: testVerticeGetIzquierdo took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testVerticeGetIzquierdo(TestArbolBinarioOrdenado.java:407)
+    [junit] 
+    [junit] Testcase: testVerticeGetDerecho took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testVerticeGetDerecho(TestArbolBinarioOrdenado.java:427)
+    [junit] 
+    [junit] Testcase: testVerticeGet took 0.001 sec
+    [junit] Testcase: testVerticeEquals took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testVerticeEquals(TestArbolBinarioOrdenado.java:467)
+    [junit] 
+    [junit] Testcase: testIteradorHasNext took 0.002 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testIteradorHasNext(TestArbolBinarioOrdenado.java:483)
+    [junit] 
+    [junit] Testcase: testIteradorNext took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] es vacia
+    [junit] java.util.NoSuchElementException: es vacia
+    [junit] 	at mx.unam.ciencias.edd.MeteSaca.saca(MeteSaca.java:47)
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinarioOrdenado$Iterador.next(ArbolBinarioOrdenado.java:49)
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinarioOrdenado$Iterador.next(ArbolBinarioOrdenado.java:21)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testIteradorNext(TestArbolBinarioOrdenado.java:508)
+    [junit] 
+    [junit] Testcase: testIteradorRemove took 0.001 sec
+    [junit] Testcase: testGiraDerecha took 0.001 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testGiraDerecha(TestArbolBinarioOrdenado.java:549)
+    [junit] 
+    [junit] Testcase: testGiraIzquierda took 0.003 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testGiraIzquierda(TestArbolBinarioOrdenado.java:620)
+    [junit] 
+    [junit] Testcase: testConstructorColeccion took 0.002 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolBinarioOrdenado.testConstructorColeccion(TestArbolBinarioOrdenado.java:88)
+    [junit] 
+    [junit] Running mx.unam.ciencias.edd.test.TestArbolRojinegro
+    [junit] Testsuite: mx.unam.ciencias.edd.test.TestArbolRojinegro
+    [junit] Tests run: 5, Failures: 2, Errors: 3, Skipped: 0, Time elapsed: 0.177 sec
+    [junit] Tests run: 5, Failures: 2, Errors: 3, Skipped: 0, Time elapsed: 0.177 sec
+    [junit] 
+    [junit] Testcase: testAgrega took 0.025 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolRojinegro.testAgregaCaso1(TestArbolRojinegro.java:120)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolRojinegro.testAgrega(TestArbolRojinegro.java:250)
+    [junit] 
+    [junit] Testcase: testElimina took 0 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolRojinegro.bfs(TestArbolRojinegro.java:270)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolRojinegro.pruebaEstructura(TestArbolRojinegro.java:287)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolRojinegro.testEliminaDeterministico(TestArbolRojinegro.java:300)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolRojinegro.testElimina(TestArbolRojinegro.java:352)
+    [junit] 
+    [junit] Testcase: testGetColor took 0.001 sec
+    [junit] 	Caused an ERROR
+    [junit] null
+    [junit] java.util.NoSuchElementException
+    [junit] 	at mx.unam.ciencias.edd.ArbolBinario.raiz(ArbolBinario.java:280)
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolRojinegro.testGetColor(TestArbolRojinegro.java:395)
+    [junit] 
+    [junit] Testcase: testEquals took 0.002 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolRojinegro.testEquals(TestArbolRojinegro.java:431)
+    [junit] 
+    [junit] Testcase: testToString took 0.001 sec
+    [junit] 	FAILED
+    [junit] 
+    [junit] junit.framework.AssertionFailedError: 
+    [junit] 	at mx.unam.ciencias.edd.test.TestArbolRojinegro.testToString(TestArbolRojinegro.java:444)
+    [junit] 
+    [junit] Running mx.unam.ciencias.edd.test.TestArreglos
+    [junit] Testsuite: mx.unam.ciencias.edd.test.TestArreglos
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec
+    [junit] Tests run: 3, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.132 sec
+    [junit] 
+    [junit] Testcase: testSelectionSort took 0.02 sec
+    [junit] Testcase: testBusquedaBinaria took 0.004 sec
+    [junit] Testcase: testQuickSort took 0.001 sec
+    [junit] Running mx.unam.ciencias.edd.test.TestCola
+    [junit] Testsuite: mx.unam.ciencias.edd.test.TestCola
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.157 sec
+    [junit] 
+    [junit] Testcase: testSaca took 0.02 sec
+    [junit] Testcase: testMira took 0.001 sec
+    [junit] Testcase: testEsVacia took 0.001 sec
+    [junit] Testcase: testEquals took 0.007 sec
+    [junit] Testcase: testMete took 0.001 sec
+    [junit] Running mx.unam.ciencias.edd.test.TestLista
+    [junit] Testsuite: mx.unam.ciencias.edd.test.TestLista
+    [junit] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.612 sec
+    [junit] Tests run: 29, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.612 sec
+    [junit] 
+    [junit] Testcase: testConstructor took 0.019 sec
+    [junit] Testcase: testGetPrimero took 0.003 sec
+    [junit] Testcase: testGetUltimo took 0 sec
+    [junit] Testcase: testGet took 0.002 sec
+    [junit] Testcase: testIndiceDe took 0.004 sec
+    [junit] Testcase: testToString took 0.019 sec
+    [junit] Testcase: testEquals took 0 sec
+    [junit] Testcase: testIteradorHasNext took 0.004 sec
+    [junit] Testcase: testIteradorNext took 0.001 sec
+    [junit] Testcase: testIteradorHasPrevious took 0.001 sec
+    [junit] Testcase: testIteradorPrevious took 0.002 sec
+    [junit] Testcase: testIteradorStart took 0.001 sec
+    [junit] Testcase: testIteradorEnd took 0 sec
+    [junit] Testcase: testIteradorRemove took 0.002 sec
+    [junit] Testcase: testMergeSort took 0.004 sec
+    [junit] Testcase: testBusquedaLineal took 0.005 sec
+    [junit] Testcase: testGetLongitud took 0.001 sec
+    [junit] Testcase: testAgrega took 0.001 sec
+    [junit] Testcase: testAgregaFinal took 0 sec
+    [junit] Testcase: testAgregaInicio took 0 sec
+    [junit] Testcase: testElimina took 0.002 sec
+    [junit] Testcase: testEliminaPrimero took 0 sec
+    [junit] Testcase: testEliminaUltimo took 0 sec
+    [junit] Testcase: testContiene took 0 sec
+    [junit] Testcase: testReversa took 0.001 sec
+    [junit] Testcase: testCopia took 0.001 sec
+    [junit] Testcase: testLimpia took 0 sec
+    [junit] Testcase: testGetElementos took 0.001 sec
+    [junit] Testcase: testEsVacio took 0.001 sec
+    [junit] Running mx.unam.ciencias.edd.test.TestPila
+    [junit] Testsuite: mx.unam.ciencias.edd.test.TestPila
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
+    [junit] Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 0.116 sec
+    [junit] 
+    [junit] Testcase: testSaca took 0.017 sec
+    [junit] Testcase: testMira took 0.001 sec
+    [junit] Testcase: testEsVacia took 0.001 sec
+    [junit] Testcase: testEquals took 0.003 sec
+    [junit] Testcase: testMete took 0.001 sec
+
+BUILD SUCCESSFUL
+Total time: 13 seconds
